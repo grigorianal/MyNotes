@@ -1,0 +1,26 @@
+<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu id="menu" [content]="mycontent">
+  <ion-content>
+    <br>
+    <ion-list><p>My Works to do</p></ion-list>
+    <ul>
+      <li>
+        <button ion-item (click)="openLessons()">
+          Lessons
+        </button>
+      </li>
+      <li> <button ion-item (click)="openWork()">
+        Work
+      </button></li>
+      <li>  <button ion-item (click)="openAsap()">
+        Asap
+      </button>
+      </li>
+
+    </ul>
+  </ion-content>
+</ion-menu>
+
+
+
+<ion-nav #myNav #mycontent [root]="rootPage"></ion-nav>
